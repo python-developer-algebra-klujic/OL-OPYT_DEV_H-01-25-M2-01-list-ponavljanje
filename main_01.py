@@ -13,6 +13,8 @@ for number in range(1, 13): # od 1 do 12 -> prvi broj je ukljucen, a zadnji nije
     numbers_1_to_12.append(number)
 
 
+# TODO DZ - Prepraviti ovo rjesenje tako da se koristi .pop() metoda na listi
+#   list.pop(index) vrati vrijednost iz liste na indeksu index i obrise taj element u listi
 # for _ in range(5):
 while len(wining_combination) < 5:
     random_number = random.randint(0, 49)
