@@ -92,4 +92,5 @@ random_subject = rnd.choice(subject)
 random_action = rnd.choice(action)
 random_conclusion = rnd.choice(conclusion)
 
+print('Baba Vanga: Bogovi imaju poruku za tebe:')
 print(f'{random_subject} {random_action} {random_conclusion}')
