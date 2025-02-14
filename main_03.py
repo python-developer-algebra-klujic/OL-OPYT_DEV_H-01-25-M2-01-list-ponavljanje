@@ -6,5 +6,31 @@ TODO za DZ
 1.b. Napravite slican zadataka prvom, ali u ovoj verziji neka bude unos playliste.
         Nakon unosa liste pjesama, onda ispisite listu, ali "shuffled".
 
-2. 
+
+2. Napišite program koji generira note akorda na osnovu početnog tona, odnosno note.
+        POJAŠNJENJE
+        Akord se sastoji od tri tona koji se mogu ponavljati.
+        Durski akord čine: početni ton, 4. ton te 7. ton.
+            Označava se samo velikim slovom početnog tona
+            ili velikim slovom početnog tona uz dodatak dur (D ili D dur)
+
+        Molski akord čine: poćetni ton, 3. ton te 7. ton.
+            Označava se samo malim slovom početnog tona
+            ili malim slovom početnog tona uz dodatak mol (d ili d mol)
+
+        Glazbena abeceda počinje od C:
+            C, C#, D, D#, E, F, F#, G, G#, A, A#, H
+
+        Engleska oznaka za H ton je B tako da oni imaju A B C D E F G tonove
+
+        Postoji pojašnjenje u teoriji glazbe zašto je prvi ton C,
+        ali to sada nije važno.
+
+
+        1. Korisnik upiste slovo tona na osnovu kojeg zeli da mu generirate akord
+        2. Nakon toga program ispise naziv akorda:
+            C (C dur): C E G
+            c (c mol): C D# G
+
+        3. Nakon toga pita korisnika zeli li generirati jos jedan akord.
 '''
