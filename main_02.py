@@ -8,6 +8,7 @@
 # a upit zeli li korisnik ponoviti generiranje da bude ispod i odmaknuto dva prazna reda
 
 import random as rnd
+import os
 
 
 subject = [
@@ -88,9 +89,18 @@ conclusion = [
 ]
 
 
-random_subject = rnd.choice(subject)
-random_action = rnd.choice(action)
-random_conclusion = rnd.choice(conclusion)
+while True:
+    os.system('cls')
 
-print('Baba Vanga: Bogovi imaju poruku za tebe:')
-print(f'{random_subject} {random_action} {random_conclusion}')
+    random_subject = rnd.choice(subject)
+    random_action = rnd.choice(action)
+    random_conclusion = rnd.choice(conclusion)
+
+    print()
+    print('Baba Vanga: Bogovi imaju poruku za tebe:')
+    print(f'{random_subject} {random_action} {random_conclusion}')
+    print('\n\n')
+
+    novo_prorocanstvo = input('Želite li novo prorocanstvo (Da/Ne)? ')
+    if novo_prorocanstvo.lower() == 'ne':
+        break
