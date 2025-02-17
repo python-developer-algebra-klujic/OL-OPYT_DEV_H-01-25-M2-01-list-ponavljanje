@@ -5,7 +5,7 @@ TODO za DZ
 '''
 
 movies = []
-movie_id = 0
+movie_id = 1
 
 while True:
 
