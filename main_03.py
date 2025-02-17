@@ -2,7 +2,6 @@
 TODO za DZ
 1.a. Kreirajte program koji omogucava korisniku unos naziva filomova koliko god to korisnik zeli.
         Nakon sto je unio sve zeljene filmove ispiste listu filmova, ali tako da su sortirani od A prema Z
-'''
 
 movies = []
 movie_id = 1
@@ -28,21 +27,50 @@ for index, movie in enumerate(sorted(movies)):
     print(f'Naziv {index + 1}. filma: ID: {movie[0]}, NAZIV: {movie[1]}.')
 
 
-#                1         2         3         4         5         6
-#              0   1     0   1     0   1     0   1     0   1     0   1
-'''movies = [ [0, 'r'], [1, 'u'], [2, 'a'], [3, 'm'], [4, 'f'], [5, 'c'] ]
+               1         2         3         4         5         6
+             0   1     0   1     0   1     0   1     0   1     0   1
+movies = [ [0, 'r'], [1, 'u'], [2, 'a'], [3, 'm'], [4, 'f'], [5, 'c'] ]
 
 movies[5] => [1, 'u']
 movies[2][0] => 4
 movies[2][1] => 'f'
-'''
 
 
-'''
+
+
+
+
+
+
+
 1.b. Napravite slican zadataka prvom, ali u ovoj verziji neka bude unos playliste.
         Nakon unosa liste pjesama, onda ispisite listu, ali "shuffled".
+'''
+
+import random as rnd
 
 
+playlist = []
+
+while True:
+
+    song = input('Upisite naziv pjesme: ')
+    playlist.append(song)
+
+    next_song = input('Zelite li dodati novu pjesmu? (dan/ne): ')
+    if next_song.lower() != 'da':
+        break
+
+
+# Ispis liste pjesama
+# pomocu rnd.shuffle(lista) funkcije unutar random modula, dobit cemo trajno promijesanu listu
+rnd.shuffle(playlist)
+for index, song in enumerate(playlist):
+    print(f'Naziv {index + 1}. pjesme: {song}.')
+
+
+
+'''
 2. Napišite program koji generira note akorda na osnovu početnog tona, odnosno note.
         POJAŠNJENJE
         Akord se sastoji od tri tona koji se mogu ponavljati.
