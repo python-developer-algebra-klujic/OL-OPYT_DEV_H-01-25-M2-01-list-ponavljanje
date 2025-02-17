@@ -5,11 +5,13 @@ TODO za DZ
 '''
 
 movies = []
+movie_id = 0
 
 while True:
 
     movie = input('Upisite naziv filma: ')
-    movies.append(movie)
+    movies.append([movie_id, movie])
+    movie_id += 1
 
     next_movie = input('Zelite li unijeti novi film? (dan/ne): ')
     if next_movie.lower() != 'da':
@@ -23,8 +25,17 @@ while True:
 
 # pomocu sorted(lista) funkcije dobit cemo sortiranu listu, ali cemo zadrzati originalni raspored elemenata u listi
 for index, movie in enumerate(sorted(movies)):
-    print(f'Naziv {index + 1}. filma: {movie}.')
+    print(f'Naziv {index + 1}. filma: ID: {movie[0]}, NAZIV: {movie[1]}.')
 
+
+#                1         2         3         4         5         6
+#              0   1     0   1     0   1     0   1     0   1     0   1
+'''movies = [ [0, 'r'], [1, 'u'], [2, 'a'], [3, 'm'], [4, 'f'], [5, 'c'] ]
+
+movies[5] => [1, 'u']
+movies[2][0] => 4
+movies[2][1] => 'f'
+'''
 
 
 '''
