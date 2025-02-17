@@ -2,7 +2,32 @@
 TODO za DZ
 1.a. Kreirajte program koji omogucava korisniku unos naziva filomova koliko god to korisnik zeli.
         Nakon sto je unio sve zeljene filmove ispiste listu filmova, ali tako da su sortirani od A prema Z
+'''
 
+movies = []
+
+while True:
+
+    movie = input('Upisite naziv filma: ')
+    movies.append(movie)
+
+    next_movie = input('Zelite li unijeti novi film? (dan/ne): ')
+    if next_movie.lower() != 'da':
+        break
+
+
+# Ispis liste filmova
+
+# Trajno sortirati listu
+# movies.sort()
+
+# pomocu sorted(lista) funkcije dobit cemo sortiranu listu, ali cemo zadrzati originalni raspored elemenata u listi
+for index, movie in enumerate(sorted(movies)):
+    print(f'Naziv {index + 1}. filma: {movie}.')
+
+
+
+'''
 1.b. Napravite slican zadataka prvom, ali u ovoj verziji neka bude unos playliste.
         Nakon unosa liste pjesama, onda ispisite listu, ali "shuffled".
 

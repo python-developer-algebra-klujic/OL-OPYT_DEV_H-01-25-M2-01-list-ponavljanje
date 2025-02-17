@@ -3,7 +3,7 @@
 # Koristeci random modul mozemo iz svake liste izvuci jednu vrijednost
 # te ju spojiti u jednu recenicu.
 
-# TODO Doradite ovaj program tako da omogucava generiranje prorocanstava
+# DONE Doradite ovaj program tako da omogucava generiranje prorocanstava
 # sve dok god to korisnik zeli. Dodajte da se prije svakog ispisa ocisti ekran
 # a upit zeli li korisnik ponoviti generiranje da bude ispod i odmaknuto dva prazna reda
 
